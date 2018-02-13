@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add player to Database</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/addplayertodb.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="welcome.html">Football Project</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="welcome.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="players.html">Players</a>
+      <a class="nav-item nav-link" href="addplayertodb.html">Add player to DB</a>
+      <a class="nav-item nav-link" href="draft.html">Draft</a>
+    </div>
+  </div>
+</nav>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Player Name</span>
+  </div>
+  <input type="text" class="form-control playername" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Position</label>
+  <select class="custom-select playerposition" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="Left Striker">Left Striker</option>
+    <option value="Central Striker">Central Striker</option>
+    <option value="Right Striker">Right Striker</option>
+    <option value="Attacking Midfielder">Attacking Midfielder</option>
+    <option value="Central Midfielder">Central Midfielder</option>
+    <option value="Defensive Midfielder">Defensive Midfielder</option>
+    <option value="Left Back">Left Back</option>
+    <option value="Left Central Back">Left Central Back</option>
+    <option value="Right Cenral Back">Right Central Back</option>
+    <option value="Right Back">Right Back</option>
+    <option value="Goalkeeper">Goalkeeper</option>
+  </select>
+</div>
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Player Club</span>
+  </div>
+  <input type="text" class="form-control playerclub" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+<button type="submit" class="btn btn-primary sendbutton">Send</button>
+</body>
+</html>
